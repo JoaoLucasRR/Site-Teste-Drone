@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto do Drone Leitor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e; /* Cor de fundo preta */
+            color: #ffffff; /* Cor do texto branca */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .mensagem {
+            text-align: center;
+            font-size: 24px;
+            padding: 30px;
+            background-color: #007acc; /* Cor de fundo azul */
+            color: #ffffff; /* Cor do texto branca */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .mensagem:hover {
+            transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+            background-color: #005a99; /* Escurece o fundo ao passar o mouse */
+        }
+
+        .mensagem p {
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="mensagem">
+        <p>Seja Bem-vindo ao nosso Projeto do Drone Leitor de QR Code.</p>
+    </div>
+</body>
+</html>
