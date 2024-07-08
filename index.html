@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto do Drone Leitor</title>
+    <title>Projeto do Drone Leitor de QR Code</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -16,8 +16,11 @@
             margin: 0;
         }
 
-        .mensagem {
+        .container {
             text-align: center;
+        }
+
+        .mensagem {
             font-size: 24px;
             padding: 30px;
             background-color: #007acc; /* Cor de fundo azul */
@@ -25,6 +28,7 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-bottom: 20px;
         }
 
         .mensagem:hover {
@@ -41,11 +45,37 @@
             0% { opacity: 0; }
             100% { opacity: 1; }
         }
+
+        .imagens {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espaçamento entre as imagens */
+        }
+
+        .imagens img {
+            width: 150px; /* Largura de cada imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .imagens img:hover {
+            transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+        }
     </style>
 </head>
 <body>
-    <div class="mensagem">
-        <p>Seja Bem-vindo ao nosso Projeto do Drone Leitor de QR Code.</p>
+    <div class="container">
+        <div class="mensagem">
+            <p>Seja Bem-vindo ao nosso Projeto do Drone Leitor de QR Code.</p>
+        </div>
+        <div class="imagens">
+            <!-- Substitua o caminho das imagens com as URLs ou caminhos corretos -->
+            <img src="https://github.com/Siwsh/Imagens/blob/main/Arroz.png?raw=true" alt="">
+            <img src="https://github.com/Siwsh/Imagens/blob/main/Feij%C3%A3o.png?raw=true" alt="">
+            <img src="https://github.com/Siwsh/Imagens/blob/main/Macarr%C3%A3o.png?raw=true" alt="">
+        </div>
     </div>
 </body>
 </html>
